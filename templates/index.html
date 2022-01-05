@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+{% block title %}Andrew Cox{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar.css') }}">
+    <style>
+/* Body */
+        body {
+            background-color: rgb(202, 209, 219);
+        }
+/* Columns */
+        .column {
+            float: left;
+            width: 50%;
+            height: 100%;
+        }
+/* Items */
+        .item {
+            height: 100vh;
+            width: 80%;
+            margin: auto;
+        }
+/* Segues  */
+        .segue {
+            width: 100%;
+            margin: auto;
+            background-color: black;
+            height: 20vh;
+        }
+/* Item 1 */
+        .item-1 {
+            width: 90%;
+        }
+    /* Column 1 */
+        .item-1 .column-1 {
+            background-color: rgb(16, 91, 161);
+        }
+        .item-1 .column-1 img {
+            height: 200px;
+            width: 100px;            
+        }
+    /* Column 2 */
+        .item-1 .column-2 {
+            background-color: rgb(100, 146, 189);
+        }
+        .item-1 .column-2 p {
+            padding: 10px;
+            text-align: center;
+        }
+        .item-1 .column-2 h1 {
+            padding: 20px;
+        }
+/* Item 2 */
+    /* Column 1 */
+        .item-2 .column-1 {
+            background-color: yellow;
+        }
+        .item-2 .column-1 h1 {
+            padding: 10px;
+        }
+    /* Column 2 */
+        .item-2 .column-2 {
+            background-color: wheat;
+           
+        }
+        .item-2 .column-2 p {
+            padding: 10px;
+            text-align: center;
+        }
+/* Item 3 */
+    /* Column 1 */
+        .item-3 .column-1 {
+            background-color: rgb(151, 54, 54);
+        }
+        .item-3 .column-1 h1 {
+            padding: 10px;
+        }
+    /* Column 2 */
+        .item-3 .column-2 {
+            background-color: rgb(187, 46, 46);
+        }
+        .item-3 .column-2 p {
+            padding: 10px;
+            text-align: center;
+        }
+/* Item 4 */
+    /* Column 1 */
+    .item-4 .column-1 {
+            background-color: rgb(151, 54, 54);
+        }
+        .item-4 .column-1 h1 {
+            padding: 10px;
+        }
+    /* Column 2 */
+        .item-4 .column-2 {
+            background-color: rgb(187, 46, 46);
+        }
+        .item-4 .column-2 p {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+{% endblock %}
+
+<!-- Navbar -->
+{% block navbar %}
+    <div class="navbar">
+        <ul class="navbar-items">
+            <li><a>Home</a></li>
+            <li><a>Skills</a></li>
+            <li><a>Projects</a></li>
+            <li><a>Contact Me</a></li>
+        </ul>
+    </div>
+{% endblock %}
+<!-- Content -->
+{% block content %}
+    <!-- 
+        item1 = Introduction
+        item2 = Skills
+        item3 = Projects
+        item4 = Contact Me
+     -->
+    <div class="item item-1">
+        <div class="column column-1">
+            <img src="../images/AndrewCox.png" alt="Andrew Cox">
+        </div>
+        <div class="column column-2">
+            <h1>Meet Andrew!</h1>
+            <p>I'm persuing a career in cyber security!</p>
+        </div>
+    </div>
+    <div class="segue segue-1">
+
+    </div>
+    <div class="item item-2">
+        <div class="column column-1">
+            <h1>Skills</h1>
+        </div>
+        <div class="column column-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+    </div>
+    <div class="segue segue-2">
+        
+    </div>
+    <div class="item item-3">
+        <div class="column column-1">
+            <h1>Projects</h1>
+        </div>
+        <div class="column column-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+    </div>
+    <div class="segue segue-3">
+        
+    </div>
+    <div class="item item-4">
+        <div class="column column-1">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="column column-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+    </div>
+{% endblock %}
