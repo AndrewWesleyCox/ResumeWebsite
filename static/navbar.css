@@ -1,10 +1,13 @@
 .navbar {
+    position: fixed;
+    top: -50px;
+    transition: top 0.5s;
     width: 100%;
 }
 .navbar-items {
     list-style-type: none;
     margin: 0;
-    
+    text-align: center;
     padding-left: 20vh;
     padding-right: 20vh;
     overflow: hidden;
